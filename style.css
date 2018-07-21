@@ -1,0 +1,316 @@
+
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+
+/* ---------------------------------------------------------
+â–  default rest
+--------------------------------------------------------- */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0 none;
+  border-collapse: collapse;
+  color: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  list-style-type: none;
+  margin: 0;
+  outline: medium none;
+  padding: 0;
+  table-layout: fixed;
+  text-decoration: none;
+  vertical-align: baseline;
+  line-height: 1; }
+
+/* ---------------------------------------------------------
+font
+--------------------------------------------------------- */
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100; }
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200; }
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300; }
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400; }
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold; }
+body {
+    font-family: Assistant,Helvetica, Arial,"Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+html {
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("./fonts/fontello.eot?69728287");
+  src: url("./fonts/fontello.eot?69728287#iefix") format("embedded-opentype"), url("./fonts/fontello.woff?69728287") format("woff"), url("./fonts/fontello.ttf?69728287") format("truetype"), url("./fonts/fontello.svg?69728287#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+
+/*#imageArea1 {
+    background: url(img/180717wedding_image-06.png) no-repeat center center;
+    background-size:100% auto !important;
+    height:595px;
+    }
+
+#imageArea2 {
+    background: url(img/180716wedding_image-02.png) no-repeat center center;
+    background-size:100% auto !important;        
+    height:595px;
+    }
+    
+    */
+
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2rem;
+        
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+
+    .telWrapper .small {
+        margin-right: 5px;
+        font-size: 1.4rem;
+        font-weight: normal;
+    }
+
+    .telWrapper {
+        display: inline-block;
+        position: absolute;
+        right: 100px;
+        color: #303030;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+        transition: all .3s;
+    }
+
+    .img-thumbnail {
+        padding: 1rem;
+        border: none !important;
+    }
+    .mb-3, .my-3 {
+        margin-bottom: 0 !important;
+    }
+
+    a:hover {
+        text-decoration: none !important;
+    }
+    .clearFix:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        font-size: 0;
+        visibility: hidden; }
+
+        .section_ttl {
+            text-align: center;
+            line-height: 0;
+            margin-bottom: 40px;
+        }
+        .section_lead {
+            font-size: 1.6rem;
+            line-height: 2.2;
+            letter-spacing: 0.01em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .gap{
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+
+/*Footer added 20190721*/
+
+@media all and (min-width: 769px) {
+    .info_wrapper {
+      background-color: #F0F0EE;
+      padding: 50px 0;
+      margin-top: 120px; }
+  
+    .info_wrapper .logo {
+      text-align: center;
+      line-height: 0;
+      margin-bottom: 20px; }
+  
+    .info_wrapper .tel {
+      text-align: center;
+      font-size: 2.4rem;
+      line-height: 1;
+      color: #303030;
+      letter-spacing: 0.1em;
+      margin-bottom: 15px; }
+      .info_wrapper .tel .contact {
+        font-size: 1.4rem;
+        display: block;
+        margin-bottom: 10px;
+        letter-spacing: 0.1em; }
+  
+    .info_wrapper .tel .small {
+      font-size: 1.4rem; }
+  
+    .info_wrapper .open {
+      font-size: 1.4rem;
+      line-height: 1;
+      text-align: center;
+      color: #303030;
+      letter-spacing: 0.01em;
+      margin-bottom: 8px; } }
+
+
+  @media all and (max-width: 768px) {
+    .info_wrapper {
+      background-color: #F0F0EE;
+      padding: 30px 0;
+      margin-top: 50px; }
+  
+    .info_wrapper .logo {
+      text-align: center;
+      line-height: 0;
+      margin-bottom: 20px; }
+  
+    .info_wrapper .logo img {
+      height: 40px;
+      width: auto; }
+  
+    .info_wrapper .tel {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1;
+      color: #303030;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px; }
+      .info_wrapper .tel .contact {
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 5px; }
+      .info_wrapper .tel a {
+        font-size: 1.8rem; }
+  
+    .info_wrapper .tel .small {
+      font-size: 1.4rem; }
+  
+    .info_wrapper .open {
+      font-size: 1.2rem;
+      line-height: 1.41;
+      text-align: center;
+      color: #303030;
+      letter-spacing: 0.01em; } }
+
+
+  @media all and (min-width: 769px) {
+    footer {
+      background-color: #737370;
+      padding: 52px 0 0; }
+  
+    footer .footer_wrapper {
+      width: 470px;
+      margin: 0 auto;
+      padding-bottom: 52px; }
+  
+    footer .footer_wrapper ul.sitemap {
+      margin-bottom: 24px; }
+  
+    footer .footer_wrapper ul.sitemap:last-child {
+      margin-bottom: 0; }
+  
+    footer .footer_wrapper ul.sitemap li {
+      float: left;
+      color: #FFF;
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+      line-height: 1.7;
+      margin-right: 30px; }
+      footer .footer_wrapper ul.sitemap li:last-child {
+        margin-right: 0; }
+  
+    footer .footer_wrapper ul.sitemap li a {
+      transition: all 0.2s; }
+  
+    footer .footer_wrapper ul.sitemap li a:hover {
+      color: #D1A599; }
+  
+    footer p {
+      border-top: 1px solid #ABABA9;
+      text-align: center;
+      color: #ABABA9;
+      font-size: 1.2rem;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      padding: 20px 0; } }
+
+
+  @media all and (max-width: 768px) {
+    footer {
+      background-color: #737370;
+      padding: 20px 0 0; }
+  
+    footer .footer_wrapper {
+      width: auto;
+      margin: 0 auto;
+      padding-bottom: 20px; }
+  
+    footer .footer_wrapper ul.sitemap {
+      float: left;
+      width: 50%;
+      margin-bottom: 0px;
+      text-align: center; }
+  
+    footer .footer_wrapper ul.sitemap:last-child {
+      margin-bottom: 0; }
+  
+    footer .footer_wrapper ul.sitemap li {
+      text-align: center;
+      color: #FFF;
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+      line-height: 30px; }
+  
+    footer .footer_wrapper ul.sitemap li a {
+      transition: all 0.2s; }
+  
+    footer .footer_wrapper ul.sitemap li a:hover {
+      color: #D1A599; }
+  
+    footer p {
+      border-top: 1px solid #ABABA9;
+      text-align: center;
+      color: #ABABA9;
+      font-size: 1.2rem;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      padding: 20px 0; } }
