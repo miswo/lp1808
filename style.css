@@ -138,12 +138,11 @@ html {
 
         .section_ttl {
             text-align: center;
-            line-height: 0;
             margin-bottom: 40px;
         }
         .section_lead {
             font-size: 1.6rem;
-            line-height: 2.2;
+            line-height: 1.6;
             letter-spacing: 0.01em;
             text-align: center;
             margin-bottom: 40px;
@@ -160,7 +159,7 @@ html {
     .info_wrapper {
       background-color: #F0F0EE;
       padding: 50px 0;
-      margin-top: 120px; }
+      margin-top: 60px; }
   
     .info_wrapper .logo {
       text-align: center;
