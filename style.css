@@ -3,10 +3,33 @@
 /* パソコンで見たときは"pc"のclassがついた画像が表示される */
 .pc { display: block !important; }
 .sp { display: none !important; }
+
+.btnBigger{
+    font-size:2.5rem !important;
+}
+
 /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
 @media only screen and (max-width: 750px) {
 .pc { display: none !important; }
 .sp { display: block !important; }
+
+h1{
+    font-size: 2.5rem !important;
+}
+h2{
+    font-size: 2rem !important;
+}
+h3{
+    font-size: 1.5rem !important;
+    
+}
+h4{
+    font-size: 1rem !important;
+}
+.btnBigger{
+    font-size:1.5rem !important;
+}
+
 }
 
 /* ---------------------------------------------------------
@@ -29,7 +52,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   table-layout: fixed;
   text-decoration: none;
   vertical-align: baseline;
-  line-height: 1; }
+  line-height: 2; }
 
 /* ---------------------------------------------------------
 font
@@ -153,13 +176,16 @@ html {
             margin-bottom:20px;
         }
 
+
+
+
 /*Footer added 20190721*/
 
 @media all and (min-width: 769px) {
     .info_wrapper {
       background-color: #F0F0EE;
       padding: 50px 0;
-      margin-top: 60px; }
+      margin-top: 40px; }
   
     .info_wrapper .logo {
       text-align: center;
