@@ -13,6 +13,30 @@
     padding-right:7rem;
 }
 
+div.topImages img{
+    width: 100%;
+}
+
+.accessBox {
+    padding: 2em 3em;
+    margin: 1em 0;
+    background: #f0f7ff;
+    border: solid 1px #5b8bd0;
+    border-radius: 5px;
+    width: 75%
+}
+.accessBox p {
+    margin: 0; 
+    padding: 0;
+    line-height: 2;
+}
+
+.accessTitle{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
 /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
 @media only screen and (max-width: 750px) {
 .pc { display: none !important; }
@@ -43,6 +67,9 @@ h4{
 .telWrapper {
     right: 20px !important;
     padding-top: 10px !important;
+}
+.accessBox {
+    width: 100% !important;
 }
 }
 
