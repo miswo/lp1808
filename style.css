@@ -23,7 +23,8 @@ div.topImages img{
     background: #f0f7ff;
     border: solid 1px #5b8bd0;
     border-radius: 5px;
-    width: 75%
+    width: 75%;
+    margin-bottom: 5rem;
 }
 .accessBox p {
     margin: 0; 
@@ -95,9 +96,23 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   vertical-align: baseline;
   line-height: 2; }
 
+
+
+
 /* ---------------------------------------------------------
 font
 --------------------------------------------------------- */
+html {
+  font-size: 62.5%; }
+
+
+body{
+  font-family :
+  YuMincho,    /* Mac用 */
+  'Yu Mincho', /* Windows用 */
+  serif;
+}
+/*
 @font-face {
   font-family: "Yu Gothic";
   src: local("Yu Gothic Medium");
@@ -121,8 +136,7 @@ font
 body {
     font-family: Assistant,Helvetica, Arial,"Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
-html {
-  font-size: 62.5%; }
+
 
 @font-face {
   font-family: 'fontello';
@@ -202,7 +216,7 @@ html {
 
         .section_ttl {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .section_lead {
             font-size: 1.6rem;
@@ -217,7 +231,20 @@ html {
             margin-bottom:20px;
         }
 
-   
+        .underBlue {
+          border-bottom: solid 3px #cce4ff;
+          position: relative;
+          display:inline-block;
+          }
+          
+        .underBlue:after {
+          position: absolute;
+          content: " ";
+          display: block;
+          border-bottom: solid 3px #5472cd;
+          bottom: -3px;
+          width: 20%;
+          } 
 
    
 
